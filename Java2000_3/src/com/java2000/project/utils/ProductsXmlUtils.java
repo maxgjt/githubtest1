@@ -12,6 +12,7 @@ public class ProductsXmlUtils {
     public static List<Clothes> parserProductFormXml(){
         List<Clothes> products = new ArrayList<>();
         XStream xStream = new XStream(new Xpp3DomDriver());
+        XStream.setupDefaultSecurity(xStream);
         xStream.alias("list",products.getClass());
         xStream.alias("clothes",Clothes.class);
         xStream.useAttributeFor(Clothes.class,"id");
