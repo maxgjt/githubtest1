@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<list>
+   <clothes id="A0001">
+     <brand>VEROMODA</brand>
+     <style>连衣裙</style>
+     <color>白色</color>
+     <size>S</size>
+     <num>4</num>
+     <price>274.0</price>
+     <description>夏季五分袖连衣裙</description>
+   </clothes>
+   <clothes id="A0002">
+     <brand>GAP</brand>
+     <style>连衣裙</style>
+     <color>黑白色</color>
+     <size>S</size>
+     <num>19</num>
+     <price>164.0</price>
+     <description>系带无袖宽松夏季柔软碎花背心裙</description>
+   </clothes>
+   <clothes id="A0003">
+     <brand>Adidas</brand>
+     <style>裤子</style>
+     <color>黑色</color>
+     <size>M</size>
+     <num>20</num>
+     <price>364.0</price>
+     <description>黑色运动裤</description>
+   </clothes>
+  <clothes id="A0004">
+    <brand>Lily</brand>
+    <style>连衣裙</style>
+    <color>蓝色</color>
+    <size>S</size>
+    <num>14</num>
+    <price>374.0</price>
+    <description>夏季七分袖连衣裙</description>
+  </clothes>
+  <clothes id="A0005">
+    <brand>Me&City</brand>
+    <style>短裙裙</style>
+    <color>黑色</color>
+    <size>X</size>
+    <num>90</num>
+    <price>64.0</price>
+    <description>秋季短裙</description>
+  </clothes>
+  <clothes id="A0006">
+    <brand>Nike</brand>
+    <style>卫衣</style>
+    <color>红色</color>
+    <size>M</size>
+    <num>10</num>
+    <price>564.0</price>
+    <description>红色运动卫衣</description>
+  </clothes>
+  <clothes id="A0007">
+    <brand>Jone</brand>
+    <style>衬衫</style>
+    <color>白色</color>
+    <size>S</size>
+    <num>41</num>
+    <price>174.0</price>
+    <description>夏季衬衫</description>
+  </clothes>
+  <clothes id="A0008">
+    <brand>JackJones</brand>
+    <style>牛仔裤</style>
+    <color>蓝色</color>
+    <size>XL</size>
+    <num>99</num>
+    <price>464.0</price>
+    <description>杰克琼斯男士牛仔裤</description>
+  </clothes>
+  <clothes id="A0009">
+    <brand>GXG</brand>
+    <style>西装</style>
+    <color>黑色</color>
+    <size>XL</size>
+    <num>10</num>
+    <price>764.0</price>
+    <description>GXG黑色西装</description>
+  </clothes>
+  <clothes id="A00010">
+    <brand>Puma</brand>
+    <style>T恤</style>
+    <color>蓝色</color>
+    <size>M</size>
+    <num>14</num>
+    <price>474.0</price>
+    <description>运动T恤</description>
+  </clothes>
+</list>
