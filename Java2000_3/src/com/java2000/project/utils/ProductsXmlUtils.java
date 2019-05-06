@@ -4,31 +4,22 @@ import com.java2000.XML.Person;
 import com.java2000.project.bean.Clothes;
 import com.thoughtworks.xstream.XStream;
 import com.thoughtworks.xstream.io.xml.Xpp3DomDriver;
-import org.dom4j.DocumentException;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
-
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
 import java.util.List;
 
 public class ProductsXmlUtils {
-    public static List<Clothes> parserProductFormXml() throws DocumentException {
+    public static List<Clothes> parserProductFormXml(){
         List<Clothes> products = new ArrayList<>();
         XStream xStream = new XStream(new Xpp3DomDriver());
         xStream.alias("list",products.getClass());
         xStream.alias("clothes",Clothes.class);
         xStream.useAttributeFor(Clothes.class,"id");
-        try {;
-            InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream("product.xml");
-//            BufferedInputStream input = new BufferedInputStream(new FileInputStream("product.xml"));
+        try {
+            BufferedInputStream input = new BufferedInputStream(new FileInputStream("product.xml"));
             products = (List<Clothes>) xStream.fromXML(input);
             input.close();
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -47,9 +38,7 @@ public class ProductsXmlUtils {
             xStream.toXML(products,output);
             output.close();
 
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
+        }catch (IOException e) {
             e.printStackTrace();
         }
     }
