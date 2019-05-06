@@ -21,8 +21,9 @@ public class ProductsXmlUtils {
         xStream.alias("list",products.getClass());
         xStream.alias("clothes",Clothes.class);
         xStream.useAttributeFor(Clothes.class,"id");
-        try {
-            BufferedInputStream input = new BufferedInputStream(new FileInputStream("product.xml"));
+        try {;
+            InputStream input = Thread.currentThread().getContextClassLoader().getResourceAsStream("product.xml");
+//            BufferedInputStream input = new BufferedInputStream(new FileInputStream("product.xml"));
             products = (List<Clothes>) xStream.fromXML(input);
             input.close();
 
