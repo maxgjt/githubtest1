@@ -16,8 +16,7 @@ public class ProductsXmlUtils {
         xStream.alias("clothes",Clothes.class);
         xStream.useAttributeFor(Clothes.class,"id");
         try {
-            BufferedInputStream input = new BufferedInputStream(new FileInputStream("test.xml"));
-
+            BufferedInputStream input = new BufferedInputStream(new FileInputStream("product.xml"));
             products = (List<Clothes>) xStream.fromXML(input);
             input.close();
 
