@@ -10,7 +10,47 @@ import java.util.List;
 public class HomeClass extends BaseClass{
     public void show(){
         showProducts();
+        print("welcome: "+currUser.getUsername());
+        boolean flag = true;
+        while(flag){
+            print(getString("home.function"));
+            print(getString("info.select"));
+            String select  = input.nextLine();
+            switch (select){
+                case "0":
+                    flag = false;
+                    System.exit(0);
+                    break;
+                case "1": //1.查询全部订单
+                    flag = false;
+                    findList();
+                    break;
+                case "2": //2.查找订单
+                    findOrderById();
+                    flag = false;
+                    break;
+                case "3": //3.购买;
+                    buyProducts();
+                    flag = false;
+                    break;
+                default:
+                    print(getString("input.error"));
+                    break;
+            }
+        }
     }
+
+    private void buyProducts() {
+
+    }
+
+    private void findOrderById() {
+
+    }
+
+    private void findList() {
+    }
+    
 
     private void showProducts() {
         ClothesService clothesService = new ClothesServiceImpl();
