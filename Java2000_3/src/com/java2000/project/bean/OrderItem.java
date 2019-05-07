@@ -42,11 +42,11 @@ public class OrderItem {
         this.shoppingNum = shoppingNum;
     }
 
-    public float getNum() {
+    public float getSum() {
         return sum;
     }
 
-    public void setNum(float sum) {
+    public void setSum(float sum) {
         this.sum = sum;
     }
 
